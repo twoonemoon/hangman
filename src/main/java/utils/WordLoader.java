@@ -15,17 +15,17 @@ public class WordLoader {
                     "БРАУЗЕР", "ПРОГРАММА", "СИСТЕМА", "МАЙНКРАФТ"};
 
     private final Random random; // Генератор случайных чисел
-
+    //Конструктор для инициализации
     public WordLoader() {
         this.random = new Random();
     }
 
     public String getRandomWord(){
-        return DEFAULT_WORDS[random.nextInt(DEFAULT_WORDS.length)]; // Случайный слово
+        return DEFAULT_WORDS[random.nextInt(DEFAULT_WORDS.length)]; // Случайное слово
     }
 
     public List<String> getAllWords(){
-        return Arrays.asList(DEFAULT_WORDS);
+        return Arrays.asList(DEFAULT_WORDS); //asList - метод преобразующий массив в ArrayList
     }
 
 }
